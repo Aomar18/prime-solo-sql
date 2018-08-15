@@ -3,9 +3,15 @@ SELECT * FROM accounts;
 
 --1. Get all users from Chicago.
 
+SELECT * FROM "accounts" WHERE "city" = 'chicago' 
+
 --2. Get all users with usernames that contain the letter a.
 
+SELECT * FROM "accounts" WHERE "username" LIKE '%a%';
+
 --3. The bank is giving a new customer bonus! Update all records with an account balance of 0.00 and a transactions_attempted of 0. Give them a new account balance of 10.00.
+
+
 
 --4. Select all users that have attempted 9 or more transactions.
 
