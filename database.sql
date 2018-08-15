@@ -21,13 +21,23 @@ UPDATE "accounts" SET "account_balance" = 10.00 WHERE "transactions_attempted" =
 
 SELECT * FROM "accounts" WHERE "transactions_attempted" > 9;
 
---5. Get the username and account balance of the 3 users with the highest balances, sort highest to lowest balance. NOTE: Research LIMIT
+--5. Get the username and account balance of the 
+-- 3 users with the highest balances, 
+--sort highest to lowest balance.
+-- NOTE: Research LIMIT
+
+SELECT "username" , "account_balance" FROM "accounts" ORDER BY "account_balance" DESC LIMIT 3 ;
+
+--6. Get the username and account balance of the 3 users 
+--with the lowest balances,
+-- sort lowest to highest balance.
+
+SELECT "username" , "account_balance" FROM "accounts" ORDER BY "account_balance" ASC LIMIT 3 ;
+
+--7. Get all users with account balances 
+--that are more than $100.
 
 
-
---6. Get the username and account balance of the 3 users with the lowest balances, sort lowest to highest balance.
-
---7. Get all users with account balances that are more than $100.
 
 --8. Add a new record.
 
